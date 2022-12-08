@@ -6,6 +6,10 @@ body {
   letter-spacing: 0.1em;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .todo {
   width: 326px;
   height: 155px;
@@ -136,4 +140,34 @@ li.bottom-list {
 .list-items {
   display: flex;
   flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 685px) {
+  .add-to-do {
+    width: 50vw;
+    font-size: 20px;
+  }
+
+  .input-row {
+    width: 80%;
+  }
+
+  .to-do-list {
+    width: 80%;
+  }
+
+  .to-do-list li {
+    width: 70vw;
+    font-size: 36px;
+    line-height: 59px;
+  }
+
+  .add-to-do-btn {
+    width: 20vw;
+    height: 68.56px;
+  }
+
+  .to-do-list li .text {
+    width: 50vw;
+  }
 }
