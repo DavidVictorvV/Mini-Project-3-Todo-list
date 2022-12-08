@@ -1,0 +1,139 @@
+body {
+  background-color: #181824;
+  font-family: "Monda";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.todo {
+  width: 326px;
+  height: 155px;
+  margin-left: 6vw;
+
+  font-size: 4vw;
+  line-height: 156px;
+
+  color: #ffffff;
+}
+.input-row {
+  width: 660px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.add-to-do {
+  width: 549.57px;
+  height: 68.56px;
+
+  background-color: #25273c;
+  font-size: 36px;
+  line-height: 59px;
+
+  outline: none;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 30px 0px 0px 30px;
+
+  text-indent: 32px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.add-to-do-btn {
+  position: absolute;
+  width: 110.43px;
+  height: 68.56px;
+  background: rgba(90, 255, 49, 0.6);
+  background-image: url(svgs/Arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.to-do-list {
+  list-style-type: none;
+  width: 666px;
+  height: 412.45px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.to-do-list li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 666px;
+  background-color: #25273c;
+
+  font-size: 36px;
+  line-height: 59px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.to-do-list li .text {
+  width: 517.55px;
+  border-bottom: 4px solid rgba(72, 64, 64, 0.37);
+}
+
+.check-item {
+  appearance: none;
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 50%;
+  border: 2px solid rgba(191, 86, 255, 0.79);
+}
+
+.check-button {
+  width: 43.42px;
+  height: 43.42px;
+}
+
+.check-button.check {
+  background-image: url(svgs/CheckTrue.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.check-button.check ~ .text {
+  text-decoration: line-through;
+  color: rgba(15, 144, 162, 0.57);
+}
+
+.del-item {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+li.bottom-list {
+  justify-content: space-between;
+  height: 60px;
+  border: 2px solid #ad02fe;
+}
+
+.nr-items-text {
+  font-size: 24px;
+  line-height: 39px;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.clear-all {
+  font-size: 24px;
+  line-height: 39px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+.clear-all:active {
+  color: #b8b8b8;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column-reverse;
+}
